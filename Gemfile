@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
 gemspec
 
@@ -12,7 +12,7 @@ gem "jquery-rails"
 if ENV['JOURNEY']
   gem "journey", :path => ENV['JOURNEY']
 else
-  gem "journey", :git => "git://github.com/rails/journey"
+  gem "journey", :git => "https://github.com/rails/journey"
 end
 
 # This needs to be with require false to avoid
@@ -96,7 +96,7 @@ if ENV['ORACLE_ENHANCED_PATH'] || ENV['ORACLE_ENHANCED']
   if ENV['ORACLE_ENHANCED_PATH']
     gem "activerecord-oracle_enhanced-adapter", :path => ENV['ORACLE_ENHANCED_PATH']
   else
-    gem "activerecord-oracle_enhanced-adapter", :git => "git://github.com/rsim/oracle-enhanced.git"
+    gem "activerecord-oracle_enhanced-adapter", :git => "https://github.com/rsim/oracle-enhanced.git"
   end
 end
 
